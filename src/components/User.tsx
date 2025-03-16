@@ -1,4 +1,4 @@
-export type UserType = {
+export interface UserType {
     id: string
     name: string
     email: string
@@ -16,7 +16,7 @@ function User({ id, name, email }: UserType) {
             <h6>
                 Email : <span className="text-white">{email}</span>
             </h6>
-            <button className="mt-4 border border-sky-900 text-sky-100 py-1 px-4 cursor-pointer rounded-xl hover:border-sky-800: hover:text-sky-200 hover:bg-sky-900">
+            <button className="mt-4 border border-sky-900 text-sky-100 py-1 px-4 cursor-pointer rounded-xl hover:border-sky-800 hover:text-sky-200 hover:bg-sky-900">
                 Remove
             </button>
         </div>
